@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "Red Box Threat Modeling Practice",
+    "owner": "Tawny Motoyama",
+    "description": "A Red Box kiosk is responsible for storing DVDs as inventory and carrying out rental and return procedures."
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Red Box Threat Model",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "John Whiteman"
+  }
+}

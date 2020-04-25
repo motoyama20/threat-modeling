@@ -10,7 +10,697 @@
       {
         "title": "Red Box Threat Model",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 3,
+                "y": 246
+              },
+              "angle": 0,
+              "id": "2e0e25ad-8550-4cde-85f0-9be3b5aa9753",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Customer"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 271,
+                "y": 70
+              },
+              "angle": 0,
+              "id": "cef5ee07-accb-42d2-8a01-baa5bea21196",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Kiosk Rental\nProcedure (via\ninterface)"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 269,
+                "y": 450
+              },
+              "angle": 0,
+              "id": "74102d55-89bc-4b57-834d-96c56c283b10",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Kiosk Return\nProcedure (via\ninterface)"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 732,
+                "y": 257
+              },
+              "angle": 0,
+              "id": "4179ae1f-2158-44bb-9a36-73f0754bf105",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Records of user data, DVD rental\nhistory, and transaction history"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 544,
+                "y": 70
+              },
+              "angle": 0,
+              "id": "c14fd77f-9987-4744-9618-5ae8c0bb3e39",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "DVD Inventory"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 541,
+                "y": 462
+              },
+              "angle": 0,
+              "id": "f073b108-4d87-4a43-b983-f0030a9bdb17",
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "DVD Inventory"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1030,
+                "y": 267
+              },
+              "angle": 0,
+              "id": "75b351b4-d009-4ff6-97c8-6203e6d44a4e",
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "DVD Supplier"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "2e0e25ad-8550-4cde-85f0-9be3b5aa9753"
+              },
+              "target": {
+                "id": "cef5ee07-accb-42d2-8a01-baa5bea21196"
+              },
+              "vertices": [
+                {
+                  "x": 85,
+                  "y": 161
+                },
+                {
+                  "x": 150,
+                  "y": 116
+                }
+              ],
+              "id": "0916193f-5900-45d9-8906-9db76a889288",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "DVD selection, account, and\npayment info",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "2e0e25ad-8550-4cde-85f0-9be3b5aa9753"
+              },
+              "target": {
+                "id": "74102d55-89bc-4b57-834d-96c56c283b10"
+              },
+              "vertices": [
+                {
+                  "x": 153,
+                  "y": 469
+                }
+              ],
+              "id": "ff7bdaa3-cfed-4ba0-8801-8a6c2ce05822",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "DVD, account, and payment\ninfo",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 184,
+                "y": 33
+              },
+              "target": {
+                "x": 190,
+                "y": 579
+              },
+              "vertices": [
+                {
+                  "x": 260,
+                  "y": 293
+                }
+              ],
+              "id": "4f3df72f-56f7-4445-a425-e7de2621c8e8",
+              "z": 10,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "cef5ee07-accb-42d2-8a01-baa5bea21196"
+              },
+              "target": {
+                "id": "c14fd77f-9987-4744-9618-5ae8c0bb3e39"
+              },
+              "vertices": [],
+              "id": "354cf628-a240-4bba-a65d-8a8a68c4ac7f",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.47946462890520597,
+                    "offset": -12.738369129467328
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "DVD info and request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "74102d55-89bc-4b57-834d-96c56c283b10"
+              },
+              "target": {
+                "id": "f073b108-4d87-4a43-b983-f0030a9bdb17"
+              },
+              "vertices": [],
+              "id": "5602acec-9673-471e-b73d-49f45f7fdbec",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.48827753111832645,
+                    "offset": 10.52253235533482
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "DVD info and insert",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "c14fd77f-9987-4744-9618-5ae8c0bb3e39"
+              },
+              "target": {
+                "id": "4179ae1f-2158-44bb-9a36-73f0754bf105"
+              },
+              "vertices": [
+                {
+                  "x": 815,
+                  "y": 144
+                }
+              ],
+              "id": "ff21c40a-c040-46bf-b64e-767a655f6b87",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Retreival status (update\nrecord(s))",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "f073b108-4d87-4a43-b983-f0030a9bdb17"
+              },
+              "target": {
+                "id": "4179ae1f-2158-44bb-9a36-73f0754bf105"
+              },
+              "vertices": [
+                {
+                  "x": 819,
+                  "y": 439
+                }
+              ],
+              "id": "22fb5f1a-8e33-4f7e-94f9-e6826e80f116",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Return status (update\nrecord(s))",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 14,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "c14fd77f-9987-4744-9618-5ae8c0bb3e39"
+              },
+              "target": {
+                "id": "2e0e25ad-8550-4cde-85f0-9be3b5aa9753"
+              },
+              "vertices": [
+                {
+                  "x": 339,
+                  "y": 301
+                }
+              ],
+              "id": "ab486288-a87e-4a92-a12b-8a464789ab1f",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Eject DVD",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 725,
+                "y": 269
+              },
+              "target": {
+                "id": "cef5ee07-accb-42d2-8a01-baa5bea21196"
+              },
+              "vertices": [
+                {
+                  "x": 515,
+                  "y": 258
+                }
+              ],
+              "id": "dbf53ada-26ac-468a-bc64-4bafe5de8f6e",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Refresh state of data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 724,
+                "y": 323
+              },
+              "target": {
+                "id": "74102d55-89bc-4b57-834d-96c56c283b10"
+              },
+              "vertices": [
+                {
+                  "x": 540,
+                  "y": 339
+                }
+              ],
+              "id": "704c2d29-0a5a-4d89-bdbe-82a63ff41e5a",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Refresh state of data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 17,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 654,
+                "y": 174
+              },
+              "target": {
+                "x": 663,
+                "y": 418
+              },
+              "vertices": [
+                {
+                  "x": 628,
+                  "y": 301
+                }
+              ],
+              "id": "9125e4fe-a3bb-45a8-99f3-d8c5c6b57003",
+              "z": 18,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "75b351b4-d009-4ff6-97c8-6203e6d44a4e"
+              },
+              "target": {
+                "id": "c14fd77f-9987-4744-9618-5ae8c0bb3e39"
+              },
+              "vertices": [
+                {
+                  "x": 963,
+                  "y": 93
+                }
+              ],
+              "id": "93bba4f8-7b7a-40aa-a00b-66daec13d480",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.6287564338901376,
+                    "offset": 17.050971590598184
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Restock DVDs",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 19,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "75b351b4-d009-4ff6-97c8-6203e6d44a4e"
+              },
+              "target": {
+                "id": "f073b108-4d87-4a43-b983-f0030a9bdb17"
+              },
+              "vertices": [
+                {
+                  "x": 990,
+                  "y": 539
+                }
+              ],
+              "id": "3c01344c-5e1d-4e38-9350-e223f2d37cb4",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.6010187524152502,
+                    "offset": -14.59158949457799
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Restock DVDs",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 1088,
+                "y": 26
+              },
+              "target": {
+                "x": 1100,
+                "y": 509
+              },
+              "vertices": [
+                {
+                  "x": 984,
+                  "y": 278
+                }
+              ],
+              "id": "c336a1f0-3de2-410c-9df3-2e5462b03364",
+              "z": 21,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 1667.2000732421875
+        }
       }
     ],
     "reviewer": "John Whiteman"
